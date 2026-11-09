@@ -19,11 +19,7 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"],
-      // Use the API server's Elysia types so `treaty<App>` sees ONE Elysia
-      // (two copies have incompatible private fields → type errors).
-      "elysia": ["../demo/node_modules/elysia"],
-      "elysia/*": ["../demo/node_modules/elysia/*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": [

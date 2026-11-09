@@ -12,6 +12,7 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    "api-contract/**", // server code copied by `bun run sync:api`, types only
   ]),
 ]);
 

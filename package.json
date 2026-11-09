@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start -p 3001",
     "lint": "eslint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "sync:api": "rm -rf api-contract && mkdir api-contract && cp ../demo/src/*.ts api-contract/"
   },
   "dependencies": {
     "@elysiajs/eden": "^1.4.9",
@@ -17,6 +18,8 @@
     "react-dom": "19.3.0"
   },
   "devDependencies": {
+    "@elysiajs/cors": "^1.4.2",
+    "@elysiajs/jwt": "^1.4.2",
     "@tailwindcss/turbopack": "^4",
     "@types/bun": "^1.4.4",
     "@types/node": "^20",
@@ -24,6 +27,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.4.5",
+    "mongodb": "^7.8.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   },

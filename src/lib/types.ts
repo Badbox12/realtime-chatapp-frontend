@@ -1,14 +1,14 @@
-// Type-only imports from the Elysia server (../../../demo/src). Nothing here ships to
+// Type-only imports from the Elysia server (web/api-contract, copied from the API repo by `bun run sync:api`). Nothing here ships to
 // the browser bundle — it only keeps client and server contracts in sync.
-export type { App } from "../../../demo/src/index";
+export type { App } from "../../api-contract/index";
 export type {
   ClientEvent,
   ServerEvent,
   Message,
   RoomSummary,
-} from "../../../demo/src/protocol";
+} from "../../api-contract/protocol";
 
-import type { Message } from "../../../demo/src/protocol";
+import type { Message } from "../../api-contract/protocol";
 
 /** A message we've sent but the server hasn't acked yet. */
 export type PendingMessage = Omit<Message, "id" | "seq" | "createdAt"> & {

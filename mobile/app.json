@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "Realtime Chat",
+    "slug": "realtime-chatapp-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": { "supportsTablet": true },
+    "android": { "edgeToEdgeEnabled": true },
+    "plugins": ["expo-crypto"],
+    "extra": {
+      "apiUrl": "${EXPO_PUBLIC_API_URL}"
+    }
+  }
+}
